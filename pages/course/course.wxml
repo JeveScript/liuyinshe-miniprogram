@@ -1,0 +1,18 @@
+<view class="page-container">
+  <image class="course-image" src=""></image>
+  <view class="course-info">
+    <view class="course-title">舞蹈课程</view>
+    <view class="course-description">
+      <view>课程学习中，遇到问题/难点</view>
+      <view>可以进群咨询交流哦 ～</view>
+    </view>
+  </view>
+  <view class="image-section">
+    <view class="image-container">
+      <view class="image-item"></view>
+      <view class="image-item"></view>
+      <view class="image-item"></view>
+    </view>
+  </view>
+  <button class="fixed-bottom-btn" open-type="contact">立即报名</button>
+</view>

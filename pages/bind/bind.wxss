@@ -1,0 +1,12 @@
+.bind-title{
+  padding: 100rpx 30rpx 60rpx;
+  color: #6c6d71;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+
+.btn-container{
+  padding: 60rpx 30rpx 0; 
+}

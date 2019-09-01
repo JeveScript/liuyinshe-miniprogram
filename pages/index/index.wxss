@@ -1,0 +1,237 @@
+.serie-item{
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+page{
+  background: #f5f9fc;
+}
+
+.banner-section{
+  position: relative;
+  height: 400rpx;
+  background: #566cd2;
+  padding: 70rpx 40rpx 0;
+}
+
+.banner-bg{
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  width: 160rpx;
+  height: 160rpx;
+  opacity: .9;
+}
+
+.banner-title{
+  line-height: 40rpx;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.banner-desc{
+  line-height: 40rpx;
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.class-count{
+  position: absolute;
+  top: 50%;
+  right: 20rpx;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  line-height: 20px;
+  color: #4963ff;
+  font-size: 12px;
+}
+
+.user-section{
+  position: relative;
+  min-height: 260rpx;
+  background: #fff;
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+  border-radius: 8px;
+  padding: 40rpx 30rpx;
+  padding-left: 170rpx;
+}
+
+.user-avatar{
+  position: absolute;
+  top: 40rpx;
+  left: 30rpx;
+  width: 120rpx;
+  height: 120rpx;
+  background: #f5f9fc;
+  border-radius: 50%;
+}
+
+.user-nickName{
+  line-height: 60rpx;
+  color: #333;
+  font-size: 22px;
+  letter-spacing: .5px;
+  margin-bottom: 10rpx;
+}
+.user-nickName text{
+  font-size: 12px;
+  display: inline-block;
+  padding: 0 10rpx;
+  line-height: 28rpx;
+  border-radius: 14rpx;
+  background: #f5f9fc;
+  color: #999;
+  margin-left: 20rpx;
+}
+.user-desc{
+  line-height: 40rpx;
+  color: #757784;
+  font-size: 14px;
+  margin-bottom: 10rpx;
+}
+.user-tips{
+  line-height: 40rpx;
+  color: #444775;
+  font-size: 12px;
+}
+.user-btn{
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+  padding: 0 30rpx;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #4963ff;
+  color: #4963ff;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 12px;
+  background: #fff;
+}
+.main-section{
+  padding: 120rpx 40rpx;
+  background: #f5f9fc;
+}
+
+.card-section{
+  padding-top: 60rpx;
+}
+.card-title{
+  line-height: 40rpx;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.card-title::before{
+  display: inline-block;
+  width: 8rpx;
+  height: 28rpx;
+  content: '';
+  background: #4963ff;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.card-item{
+  position: relative;
+  height: 260rpx;
+  background: #fff;
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+  border-radius: 8px;
+  padding: 40rpx;
+  margin-bottom: 40rpx;
+}
+.card-name{
+  font-size: 22px;
+  color: #0f0c38;
+  font-weight: 500;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+}
+.card-desc{
+  font-size: 14px;
+  color: #757784;
+  line-height: 54rpx;
+}
+.card-icon{
+  position: absolute;
+  top: 20rpx;
+  right: 60rpx;
+  width: 170rpx;
+  height: 170rpx;
+  background-color: #f5f9fc;
+  border-radius: 50%;
+}
+.card-icon image{
+  display: block;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card-btn{
+  position: absolute;
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 210rpx;
+  height: 28px;
+  line-height: 28px;
+  background: #6071ff;
+  color: #fff;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.class-section{
+  padding-top: 60rpx;
+}
+.class-title{
+  line-height: 40rpx;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.class-title::before{
+  display: inline-block;
+  width: 8rpx;
+  height: 28rpx;
+  content: '';
+  background: #4963ff;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.class-list{
+  padding: 10rpx 30rpx;
+  background: #fff;
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+  border-radius: 8px;
+}
+.class-item{
+  position: relative;
+  padding: 18rpx 160rpx 18rpx 18rpx;
+  font-size: 12px;
+  color: #666;
+}
+.class-item:after{
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #e4e4e4;
+  border-bottom: 2px solid #e4e4e4;
+  transform: rotate(-45deg);
+
+}
+.class-item:not(:last-child){
+  border-bottom: 1px dashed rgba(0,0,0,.1);
+}

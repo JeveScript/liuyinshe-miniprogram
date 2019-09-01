@@ -1,0 +1,34 @@
+/**app.wxss**/
+@import './weui.wxss';
+
+page{
+  background-color: #efeff4;
+  font-size: 16px;
+  color: #333;
+  font-family: PingFangSC-Regular,
+    'STHeiti Light',
+    'helvetica neue',
+    'hiragino sans gb',
+    arial,
+    'microsoft yahei ui',
+    'microsoft yahei',
+    simsun,
+    sans-serif;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+button[type="primary"]{
+  background: #3977f4;
+  color: #fff;
+}
+
+.button-hover[type="primary"]{
+  background: #5187f5;
+}
+
+button[type="primary"][disabled]{
+  color: rgba(255,255,255,.3);
+}

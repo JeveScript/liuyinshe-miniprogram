@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<pd-loading is-show="{{!pageShow}}"></pd-loading>
+<view class="page-container" wx:if="{{pageShow}}">
+  <view class="banner-section">
+    <image class="banner-bg" src="./../../images/queue_music.svg"></image>
+    <view class="banner-title">留音社</view>
+    <view class="banner-desc">
+      <view>留美专业舞蹈老师亲授中国舞</view>
+      <view>开设钢琴、声乐、萨克斯、舞蹈版</view>
+    </view>
+    <view class="user-section">
+      <image class="user-avatar" src="{{ userInfo ? userInfo.avatarUrl : './../../images/user.png'}}"></image>
+      <view class="user-nickName">
+        {{ userInfo ? userInfo.nickName : '未登录'}}
+      </view>
+      <view class="user-desc">欢迎来到留音社！</view>
+      <view class="user-tips">
+        <view>音乐，是一种信仰！</view>
+        <view>GOGOGO ~</view>
+      </view>
+      <button wx:if="{{!userInfo.id}}" open-type="getUserInfo" class="user-btn" bindgetuserinfo="onGotUserInfo">登录</button>
+      <navigator url="/pages/my/my" wx:if="{{userInfo.id}}" class="user-btn">个人中心</navigator>
+    </view>
+  </view>
+  <view class="main-section">
+    <view class="class-section" wx:if="{{ userInfo && classes.length }}">
+      <view class="class-title">我的课程</view>
+      <view class="class-list">
+        <navigator url="/pages/lesson/lesson?class_id={{item.id}}&course_id={{item.course_id}}" class="class-item" wx:for="{{classes}}" wx:key="{{index}}">
+          <view class="class-name">{{ item.name }}</view>
+          <view class="class-count">{{ item.title }}</view>
+        </navigator>
+      </view>
+    </view>
+    <view class="card-section">
+      <view class="card-title">课程体系</view>
+      <view class="card-list">
+        <view class="card-item" wx:for="{{courses}}" wx:key="{{idx}}" wx:for-index="idx" wx:for-item="item">
+          <view class="card-name">{{item.title}}</view>
+          <view class="card-desc">
+            <view>{{item.description}}</view>
+            <view>共计 {{item.count}} 课时</view>
+          </view>
+          <view class="card-icon">
+            <image src="{{item.image}}"></image>
+          </view>
+          <navigator url="/pages/course/course" class="card-btn">查看详情</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
