@@ -4,7 +4,8 @@
     "pages/bind/bind",
     "pages/course/course",
     "pages/lesson/lesson",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/editor/editor"
   ],
   "window": {
     "backgroundTextStyle": "light",
