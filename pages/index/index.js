@@ -17,7 +17,7 @@ Page({
       count: 20,
       image:'/images/music_icon.png'
     },{
-      id: 3,
+      id: 4,
       title: '舞蹈',
       description: '舞蹈描述',
       count: 20,
@@ -62,5 +62,12 @@ Page({
       title: '留音社',
       path: '/pages/index/index'
     }
+  },
+  courseTo:function(e){
+    let id = e.currentTarget.dataset.id;
+    console.log(id)
+    wx.navigateTo({
+      url: '/pages/course/course?id=' + id,
+    })
   }
 })

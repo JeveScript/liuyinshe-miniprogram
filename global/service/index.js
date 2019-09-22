@@ -13,5 +13,8 @@ module.exports = {
   },
   leaveApply: function(id, params) {
     return wxRequest.post(API.leaveApply(id),params)
+  },
+  courseShow: function(course_id) {
+    return wxRequest.get(API.courseShow(course_id));
   }
 }

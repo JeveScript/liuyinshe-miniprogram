@@ -44,7 +44,7 @@
           <view class="card-icon">
             <image src="{{item.image}}"></image>
           </view>
-          <navigator url="/pages/course/course" class="card-btn">查看详情</navigator>
+          <buttom bindtap="courseTo" class="card-btn" data-id="{{item.id}}">查看详情</buttom>
         </view>
       </view>
     </view>

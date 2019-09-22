@@ -58,7 +58,7 @@ page{
 }
 
 .lesson-item-index{
-  width: 15%;
+  width: 11%;
   text-align: center;
 }
 .lesson-item-date{
@@ -70,7 +70,7 @@ page{
 
 .lesson-item-status{
   position: relative;
-  width: 20%;
+  width: 24%;
 }
 
 .green{
@@ -113,6 +113,8 @@ page{
 
 .grey{
   color: #999;
+  font-size: 24rpx;
+  margin-left: 5rpx;
 }
 
 .apply-btn{
